@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include<locale.h>
+
+int main() {
+
+  double num;
+
+  setlocale(LC_ALL, "portuguese");
+    
+  printf("Me fale qualquer número e eu mostrarei o dobro! ");
+  scanf("%lf", &num);
+  double dobro = num * 2;
+  printf("O dobro do número %.2f é: %.2f",num, dobro);
+}
