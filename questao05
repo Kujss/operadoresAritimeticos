@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    float custo, frete, despesas, venda;
+
+    
+    printf("Digite o custo da mercadoria: ");
+    scanf("%f", &custo);
+
+    printf("Digite o valor do frete: ");
+    scanf("%f", &frete);
+
+    printf("Digite as despesas eventuais: ");
+    scanf("%f", &despesas);
+
+    
+    float total = custo + frete + despesas;
+
+
+    printf("Digite o valor de venda: ");
+    scanf("%f", &venda);
+
+    float lucro = venda - total;
+    float total_lucro = (lucro / total) * 100;
+
+    printf("\nResumo:\n");
+    printf("Custo total: %.2f\n", total);
+    printf("Valor de venda: %.2f\n", venda);
+    printf("Lucro: %.2f\n", lucro);
+    printf("Percentual de lucro: %.2f%%\n", total_lucro);
+
+}
