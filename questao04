@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+
+  float real;
+  float diferenca = 4.97;
+  float valor;
+  
+  printf("Valor em Reais(R$): ");
+  scanf("%f", &real);
+
+  float dolar = real / diferenca;
+
+  printf("Seu valor em dólar americano (US$) é: US$%.2f", dolar);
+}
